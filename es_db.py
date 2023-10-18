@@ -82,7 +82,8 @@ def get_rtc_urls(slc_id: str) -> dict:
 
 def _get_dst_paths_for_rtc(product_url_dicts: dict, directory=None) -> list[Path]:
     parent = directory or Path('.')
-    out_paths = [parent / Path(opera_id) / url.split('/')[-1] for opera_id, urls in product_url_dicts.items() for url in urls]
+    out_paths = [parent / Path(opera_id) / url.split('/')[-1]
+                 for opera_id, urls in product_url_dicts.items() for url in urls]
     return out_paths
 
 

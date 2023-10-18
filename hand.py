@@ -10,7 +10,8 @@ def compute_hand(dem_path: Path, acc_thresh: float = 100) -> np.ndarray:
 
     + https://github.com/mdbartos/pysheds/blob/master/examples/hand.ipynb
     + https://github.com/mdbartos/pysheds#example-usage
-    + https://github.com/ASFHyP3/asf-tools/blob/561b6aaf0399f61310ac8531d789f83bf769c347/src/asf_tools/hand/calculate.py#L58
+    + https://github.com/ASFHyP3/asf-tools/blob/
+    561b6aaf0399f61310ac8531d789f83bf769c347/src/asf_tools/hand/calculate.py#L58
 
     acc_thresh set according to last reference. The original example in pysheds sets to 200.
     """
