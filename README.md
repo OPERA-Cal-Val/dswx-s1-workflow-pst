@@ -12,8 +12,10 @@ Mostly experimental.
 
 Launch via `jupyter-lab`. Basically takes a single Sentinel-1 SLC ID and obtains the water products for the associated input granule. Here is a diagram for accounting:
 
-$1 \textrm{ Sentinel-1 SLC ID} \longrightarrow N \textrm{ OPERA RTC Burst Products} \longrightarrow M \textrm{ MGRS Tiled DSWx Products}
-$, where $N\geq24$ (at least 8 bursts per swath) and $M \leq 9$ (don't know exact size comparison between MGRS tile and S1 acq; this is a much larger upper bound assuming 9 overlapping tiles if acquisition occurs in center of MGRS tile and has some overlap across all 8 neighbors; likely 3-6).
++ $1 \textrm{ Sentinel-1 SLC ID} \longrightarrow N \textrm{ OPERA RTC Burst Products} \longrightarrow M \textrm{ MGRS Tiled DSWx Products}
+$, 
+
+where $N\geq24$ (at least 8 bursts per swath) and $M~12$  (don't know exact size comparison between MGRS tile and S1 acq so based on example used above).
 
 May be updated to take in specific burst RTC products and remove dependence on access to PST Venue ([reference](https://github.com/OPERA-Cal-Val/DSWx-Requirement-Verification#setup-for-validation-table-generation)). This requires a `.env` file with JPL credentials.
 
