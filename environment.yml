@@ -8,7 +8,7 @@ dependencies:
  - click
  - contextily
  - dateparser
- - dem_stitcher
+ - dem_stitcher>=2.5.4
  - fiona
  - flake8
  - flake8-blind-except
@@ -49,4 +49,4 @@ dependencies:
    - elasticsearch-dsl<8.0 # To ensure version 7 is compatible: https://elasticsearch-dsl.readthedocs.io/en/latest/#compatibility
    - pysheds
    - git+https://github.com/OPERA-Cal-Val/tile-stitcher
-   - git+https://github.com/cmarshak/DSWX-SAR.git@mask_name
+   - git+https://github.com/opera-adt/DSWX-SAR.git
