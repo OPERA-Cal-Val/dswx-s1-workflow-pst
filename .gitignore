@@ -63,3 +63,6 @@ __pycache__/
 
 # out directory
 out/
+
+# Test file
+test.py
