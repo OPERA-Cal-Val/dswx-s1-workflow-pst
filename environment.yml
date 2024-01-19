@@ -14,7 +14,7 @@ dependencies:
  - flake8-blind-except
  - flake8-builtins
  - flake8-import-order
- - gdal
+ - gdal<3.8
  - geopandas
  - h5py
  - hyp3_sdk
@@ -49,4 +49,4 @@ dependencies:
    - elasticsearch-dsl<8.0 # To ensure version 7 is compatible: https://elasticsearch-dsl.readthedocs.io/en/latest/#compatibility
    - pysheds
    - git+https://github.com/OPERA-Cal-Val/tile-stitcher
-   - git+https://github.com/opera-adt/DSWX-SAR.git
+   - git+git@github.com:cmarshak/DSWX-SAR.git@default-params-update
