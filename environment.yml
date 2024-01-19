@@ -3,7 +3,7 @@ channels:
  - conda-forge
 dependencies:
  - python<3.12
- - asf_search>=6.7.0
+ - asf_search>=6.7.3
  - boto3
  - click
  - contextily
