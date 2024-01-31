@@ -39,6 +39,8 @@ dependencies:
  - rasterio
  - ruamel.yaml
  - requests
+ - tile-mate>=0.0.6  # has asf-tiles
+ - dem_stitcher>=2.5.5  # faster tile reading
  - scikit-image
  - scikit-learn
  - shapely
@@ -47,6 +49,4 @@ dependencies:
  - pip:
    - elasticsearch==7.13.4 # https://github.com/nasa/opera-sds-pcm/blob/develop/setup.py#L74
    - elasticsearch-dsl<8.0 # To ensure version 7 is compatible: https://elasticsearch-dsl.readthedocs.io/en/latest/#compatibility
-   - pysheds
-   - git+https://github.com/OPERA-Cal-Val/tile-mate
    - git+https://github.com/cmarshak/DSWX-SAR.git@default-params-updates
